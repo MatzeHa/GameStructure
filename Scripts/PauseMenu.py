@@ -95,7 +95,7 @@ class PauseMenu:
                            "options1": [but100, but101, but102, but103, but104, but105, but106],
                            "help": [0, 0, 0, 0, but20],
                            "graphics": [sli30, sli31, sli32, dis33, but34],
-                           "quit": [but40, but41]}
+                           "quit": [0, but40, but41, 0]}
 
     def pause_fun(self, x):
         self.screen = "pause_menue"
@@ -110,12 +110,14 @@ class PauseMenu:
 
     def quit_fun(self, x):
         self.screen = "quit"
-        self.nr_selectables = [1, 1]
-        self.selected = [1, 0]
+        self.nr_selectables = [0, 1, 1, 0]
+        self.selected = [0, 1, 0, 0]
+        return self.selected
 
     def blit_quit(self):
         for i in self.clickables["quit"]:
-            i.blit_button(self.win, self.selected[i.nr])
+            if isinstance(i, self.Button):
+                i.blit_button(self.win, self.selected[i.nr])
 
     def really_quit_fun(self, x):
         self.quit = True
