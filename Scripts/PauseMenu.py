@@ -35,59 +35,59 @@ class PauseMenu:
 
         self.font = pygame.font.SysFont('Courier', 16, True)
 
-        but1 = self.Button(self.bar_pos, "Weiter", self.font, (0, 4), self.win_height, self.menu_size)
+        but1 = self.Button(self.bar_pos, "Weiter", self.font, (0, 4), self.menu_size)
         but1.fun = MethodType(self.end_pause_fun, but1)
-        but2 = self.Button(self.bar_pos, "Optionen", self.font, (1, 4), self.win_height, self.menu_size)
+        but2 = self.Button(self.bar_pos, "Optionen", self.font, (1, 4), self.menu_size)
         but2.fun = MethodType(self.options_fun, but2)
-        but3 = self.Button(self.bar_pos, "Hilfe", self.font, (2, 4), self.win_height, self.menu_size)
+        but3 = self.Button(self.bar_pos, "Hilfe", self.font, (2, 4), self.menu_size)
         but3.fun = MethodType(self.help_fun, but3)
-        but4 = self.Button(self.bar_pos, "Grafik", self.font, (3, 4), self.win_height, self.menu_size)
+        but4 = self.Button(self.bar_pos, "Grafik", self.font, (3, 4), self.menu_size)
         but4.fun = MethodType(self.graphics_fun, but4)
-        but5 = self.Button(self.bar_pos, "Beenden", self.font, (4, 4), self.win_height, self.menu_size)
+        but5 = self.Button(self.bar_pos, "Beenden", self.font, (4, 4), self.menu_size)
         but5.fun = MethodType(self.quit_fun, but5)
 
-        but10 = self.Button(self.bar_pos, "option 1", self.font, (0, 4), self.win_height, self.menu_size)
+        but10 = self.Button(self.bar_pos, "option 1", self.font, (0, 4), self.menu_size)
         but10.fun = MethodType(self.options1_fun, but10)
-        but11 = self.Button(self.bar_pos, "option 2", self.font, (1, 4), self.win_height, self.menu_size)
+        but11 = self.Button(self.bar_pos, "option 2", self.font, (1, 4), self.menu_size)
         but11.fun = MethodType(self.pause_fun, but11)
-        but12 = self.Button(self.bar_pos, "option 3", self.font, (2, 4), self.win_height, self.menu_size)
+        but12 = self.Button(self.bar_pos, "option 3", self.font, (2, 4), self.menu_size)
         but12.fun = MethodType(self.pause_fun, but12)
-        but13 = self.Button(self.bar_pos, "option 4", self.font, (3, 4), self.win_height, self.menu_size)
+        but13 = self.Button(self.bar_pos, "option 4", self.font, (3, 4), self.menu_size)
         but13.fun = MethodType(self.pause_fun, but13)
-        but14 = self.Button(self.bar_pos, "Zurück", self.font, (4, 4), self.win_height, self.menu_size)
+        but14 = self.Button(self.bar_pos, "Zurück", self.font, (4, 4), self.menu_size)
         but14.fun = MethodType(self.pause_fun, but14)
 
-        but100 = self.Button(self.bar_pos, "suboption 1", self.font, (0, 6), self.win_height, self.menu_size)
+        but100 = self.Button(self.bar_pos, "suboption 1", self.font, (0, 6), self.menu_size)
         but100.fun = MethodType(self.options_fun, but100)
-        but101 = self.Button(self.bar_pos, "suboption 2", self.font, (1, 6), self.win_height, self.menu_size)
+        but101 = self.Button(self.bar_pos, "suboption 2", self.font, (1, 6), self.menu_size)
         but101.fun = MethodType(self.options_fun, but101)
-        but102 = self.Button(self.bar_pos, "suboption 3", self.font, (2, 6), self.win_height, self.menu_size)
+        but102 = self.Button(self.bar_pos, "suboption 3", self.font, (2, 6), self.menu_size)
         but102.fun = MethodType(self.options_fun, but102)
-        but103 = self.Button(self.bar_pos, "suboption 4", self.font, (3, 6), self.win_height, self.menu_size)
+        but103 = self.Button(self.bar_pos, "suboption 4", self.font, (3, 6), self.menu_size)
         but103.fun = MethodType(self.options_fun, but103)
-        but104 = self.Button(self.bar_pos, "suboption 5", self.font, (4, 6), self.win_height, self.menu_size)
+        but104 = self.Button(self.bar_pos, "suboption 5", self.font, (4, 6), self.menu_size)
         but104.fun = MethodType(self.options_fun, but104)
-        but105 = self.Button(self.bar_pos, "suboption 6", self.font, (5, 6), self.win_height, self.menu_size)
+        but105 = self.Button(self.bar_pos, "suboption 6", self.font, (5, 6), self.menu_size)
         but105.fun = MethodType(self.options_fun, but105)
-        but106 = self.Button(self.bar_pos, "Zurück", self.font, (6, 6), self.win_height, self.menu_size)
+        but106 = self.Button(self.bar_pos, "Zurück", self.font, (6, 6), self.menu_size)
         but106.fun = MethodType(self.options_fun, but106)
 
-        but20 = self.Button(self.bar_pos, "Zurück", self.font, (4, 4), self.win_height, self.menu_size)
+        but20 = self.Button(self.bar_pos, "Zurück", self.font, (4, 4), self.menu_size)
         but20.fun = MethodType(self.pause_fun, but20)
 
-        sli30 = self.Slider(self.bar_pos, (1, 0, 0), (0, 4), self.win_height, self.menu_size)
+        sli30 = self.Slider(self.bar_pos, (1, 0, 0), (0, 4), self.menu_size)
         sli30.fun =  MethodType(self.pause_fun, sli30)
-        sli31 = self.Slider(self.bar_pos, (0, 1, 0), (1, 4), self.win_height, self.menu_size)
+        sli31 = self.Slider(self.bar_pos, (0, 1, 0), (1, 4), self.menu_size)
         sli31.fun = MethodType(self.pause_fun, sli31)
-        sli32 = self.Slider(self.bar_pos, (0, 0, 1), (2, 4), self.win_height, self.menu_size)
+        sli32 = self.Slider(self.bar_pos, (0, 0, 1), (2, 4), self.menu_size)
         sli32.fun = MethodType(self.pause_fun, sli32)
-        dis33 = self.Display(self.bar_pos, (3, 4), self.win_height, self.menu_size)
-        but34 = self.Button(self.bar_pos, "Zurück", self.font, (4, 4), self.win_height, self.menu_size)
+        dis33 = self.Display(self.bar_pos, (3, 4), self.menu_size)
+        but34 = self.Button(self.bar_pos, "Zurück", self.font, (4, 4), self.menu_size)
         but34.fun = MethodType(self.pause_fun, but34)
 
-        but40 = self.Button(self.bar_pos, "Zurück", self.font, (1, 3), self.win_height, self.menu_size)
+        but40 = self.Button(self.bar_pos, "Zurück", self.font, (1, 3), self.menu_size)
         but40.fun = MethodType(self.pause_fun, but40)
-        but41 = self.Button(self.bar_pos, "Beenden", self.font, (2, 3), self.win_height, self.menu_size)
+        but41 = self.Button(self.bar_pos, "Beenden", self.font, (2, 3), self.menu_size)
         but41.fun = MethodType(self.really_quit_fun, but41)
 
         self.clickables = {"pause_menue": [but1, but2, but3, but4, but5],
@@ -240,11 +240,11 @@ class PauseMenu:
 
 
     class Display:
-        def __init__(self, pos, nr, h, menu_size):
+        def __init__(self, pos, nr, menu_size):
             self.nr = nr[0]
             self.pos = list(pos)
-            height = ((2 + self.nr * h) / 8)
-            self.pos[1] = self.pos[1] + height
+            y = menu_size[1] + ((nr[0]+1)/(nr[1]+2)) * menu_size[3] - (self.pos[3]/2)
+            self.pos[1] = y
             self.selected = False
 
         def blit_button(self, win, color):
@@ -252,10 +252,9 @@ class PauseMenu:
             pygame.draw.rect(win, (0, 0, 0), self.pos, 2)
 
     class Button:
-        def __init__(self, pos, caption, font, nr, h, menu_size):
+        def __init__(self, pos, caption, font, nr, menu_size):
             self.nr = nr[0]
             self.pos = list(pos)
-
             y = menu_size[1] + ((nr[0]+1)/(nr[1]+2)) * menu_size[3] - (self.pos[3]/2)
             self.pos[1] = y
             self.text = font.render(caption, 1, (0, 0, 0))
@@ -269,12 +268,12 @@ class PauseMenu:
                 pygame.draw.rect(win, (80, 255, 255), self.pos, 2)
 
     class Slider:
-        def __init__(self, pos, color, nr, h, menu_size):
-
+        def __init__(self, pos, color, nr, menu_size):
             self.nr = nr[0]
             self.pos = list(pos)
-            height = ((2 + self.nr * h) / 8)
-            self.pos[1] = self.pos[1] + height
+            y = menu_size[1] + ((nr[0] + 1) / (nr[1] + 2)) * menu_size[3] - (self.pos[3] / 2)
+            self.pos[1] = y
+            self.selected = False
             self.intervall = pos[2] / 255
             self.color = color
             self.val = 0
