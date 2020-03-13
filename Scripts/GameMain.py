@@ -7,7 +7,6 @@ from Controls import controls_game, controls_pause
 pygame.init()
 
 if __name__ == "__main__":
-
     class Setup:
         def __init__(self):
             self.win = pygame.Surface((0, 0))
