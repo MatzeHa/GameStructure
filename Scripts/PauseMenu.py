@@ -31,7 +31,7 @@ class PauseMenu:
 
         self.screen = "pause_menue"
 
-        self.options = {"bgcol": (112, 112, 112)}
+        self.options = {"bgcol": (0, 0, 0)}
 
         self.font = pygame.font.SysFont('Courier', 16, True)
 
@@ -85,11 +85,10 @@ class PauseMenu:
         but34 = self.Button(self.bar_pos, "Zurück", self.font, (4, 4), self.win_height, self.menu_size)
         but34.fun = MethodType(self.pause_fun, but34)
 
-        but40 = self.Button(self.bar_pos, "Zurück", self.font, (0, 1), self.win_height, self.menu_size)
+        but40 = self.Button(self.bar_pos, "Zurück", self.font, (1, 3), self.win_height, self.menu_size)
         but40.fun = MethodType(self.pause_fun, but40)
-        but41 = self.Button(self.bar_pos, "Beenden", self.font, (1, 1), self.win_height, self.menu_size)
+        but41 = self.Button(self.bar_pos, "Beenden", self.font, (2, 3), self.win_height, self.menu_size)
         but41.fun = MethodType(self.really_quit_fun, but41)
-
 
         self.clickables = {"pause_menue": [but1, but2, but3, but4, but5],
                            "options": [but10, but11, but12, but13, but14],
@@ -97,7 +96,6 @@ class PauseMenu:
                            "help": [0, 0, 0, 0, but20],
                            "graphics": [sli30, sli31, sli32, dis33, but34],
                            "quit": [but40, but41]}
-
 
     def pause_fun(self, x):
         self.screen = "pause_menue"
@@ -277,7 +275,7 @@ class PauseMenu:
             self.pos[1] = self.pos[1] + height
             self.intervall = pos[2] / 255
             self.color = color
-            self.val = 122
+            self.val = 0
 
         def blit_button(self, win, selected):
             pos_draw = self.pos.copy()

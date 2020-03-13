@@ -1,9 +1,10 @@
 import pygame
 import os
 
-from Entity import Entity
-from PauseMenu import PauseMenu
-from Controls import controls_game, controls_pause
+from Scripts.Entity import Entity
+from Scripts.PauseMenu import PauseMenu
+from Scripts.Controls import controls_game, controls_pause
+
 pygame.init()
 
 if __name__ == "__main__":
